@@ -1,0 +1,389 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "New Rocker", cursive;
+  background: linear-gradient(90deg, black, #00d5ff) fixed;
+}
+.mobile {
+  display: none;
+  background: none;
+  border: none;
+  box-shadow: none;
+  color: #00d5ff;
+  background-color: #ff00c8;
+}
+@media (max-width: 950px) {
+  nav ul {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+
+  .mobile:hover {
+    cursor: pointer;
+    background-color: #99ff00;
+    transition: ease 1s;
+  }
+
+  ul.mobileresponse {
+    display: block;
+    background-color: white;
+    color: black;
+    position: absolute;
+    left: 0;
+    top: 5rem;
+    width: 100%;
+    background-color: rgb(180, 180, 180);
+  }
+  ul.mobileresponse li {
+    display: block;
+    margin: 1rem;
+  }
+  ul li:hover {
+    background-color: #99ff00;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 20px 50px;
+  position: sticky;
+  top: 0;
+  background-image: url(assets/cyberpunk2077.jpeg);
+  background-size: cover;
+  min-height: 50vh;
+}
+
+#firstname {
+  margin-right: auto;
+  font-size: 2.3em;
+  color: #00d5ff;
+  text-shadow: 2px 2px 4px #ff00c8;
+}
+
+#firstname:hover {
+  color: #ff00c8;
+  text-transform: uppercase;
+  text-decoration: underline;
+  cursor: crosshair;
+}
+
+header li {
+  list-style: none;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0 20px;
+}
+
+header a {
+  text-decoration: none;
+  color: #00d5ff;
+  font-size: 1.6em;
+  transition: all 0.3s ease 0s;
+  text-shadow: 2px 2px 4px #ff00c8;
+}
+
+header a:hover {
+  color: #ff00c8;
+  text-transform: uppercase;
+  text-decoration: underline;
+  cursor: crosshair;
+}
+
+#projects_h3 {
+  font-size: 2.3em;
+  color: #00d5ff;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  text-shadow: 2px 2px 4px #ff00c8;
+}
+
+#projects_h3:hover {
+  color: #ff00c8;
+  text-transform: uppercase;
+  text-decoration: underline;
+  cursor: crosshair;
+}
+
+.projectcards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.project_card_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.project_card {
+  width: 250px;
+  height: auto;
+  position: relative;
+  background: #171717;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  padding: 20px;
+  transition: all 0.3s ease-in;
+}
+
+.project_card > * {
+  padding: 10px;
+}
+
+.project_card .project_img {
+  height: 150px;
+  width: 150px;
+  border: 5px double blue;
+  border-radius: 50%;
+  background-position: center center;
+  background-size: cover;
+}
+
+.project_card .project_title {
+  padding: 20px 10px;
+  font-size: 1.5rem;
+  color: #00d5ff;
+  text-shadow: 2px 2px 4px #ff00c8;
+}
+
+#img1 {
+  background-image: url(assets/Cyberpunkspine.jpeg);
+}
+
+#img2 {
+  background-image: url(assets/Cyberpunk3.jpeg);
+}
+
+#img3 {
+  background-image: url(assets/evongelion.jpeg);
+}
+
+.project_card:hover {
+  background: #ff00c8;
+  color: #fff;
+  text-transform: uppercase;
+  box-shadow: 0px 0px 11px 5px black;
+  cursor: crosshair;
+}
+
+.project_card .project_text {
+  line-height: 20px;
+  color: #00d5ff;
+  text-shadow: 2px 2px 4px #ff00c8;
+}
+
+.aboutme {
+  padding: 20px;
+}
+
+.aboutme-text {
+  margin: 20px;
+  padding: 20px;
+  text-align: left;
+  font-size: 1.6em;
+  color: #00d5ff;
+  line-height: 1.5;
+  text-shadow: 2px 2px 4px #ff00c8;
+}
+
+.aboutme_img {
+  height: 170px;
+  width: auto;
+  float: right;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10%;
+}
+
+h4 {
+  font-size: 2.3em;
+  color: #00d5ff;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  text-shadow: 2px 2px 4px #ff00c8;
+}
+
+h4:hover {
+  color: #ff00c8;
+  text-transform: uppercase;
+  text-decoration: underline;
+  cursor: crosshair;
+}
+
+.skill_cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.skillcard {
+  width: 200px;
+  height: auto;
+  position: relative;
+  background: #171717;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  padding: 20px;
+  transition: all 0.3s ease-in;
+}
+
+.skillcard > * {
+  padding: 10px;
+}
+
+.skillcard .skillcardimg {
+  height: 150px;
+  width: 150px;
+  border: 5px dotted rgb(34, 0, 255);
+  background-position: center center;
+  background-size: cover;
+}
+
+.skillcard .skillcardtitle {
+  padding: 20px 10px;
+  font-size: 1.5rem;
+  color: #00d5ff;
+  text-shadow: 2px 2px 4px #ff00c8;
+}
+
+.skillcard:hover {
+  background: #ff00c8;
+  color: #fff;
+  text-transform: uppercase;
+  box-shadow: 0px 0px 11px 5px black;
+  cursor: crosshair;
+}
+
+.skillcard .skillcardtext {
+  line-height: 20px;
+  color: #00d5ff;
+  text-shadow: 2px 2px 4px #ff00c8;
+}
+
+#skillimg1 {
+  background-image: url(assets/HTML.jpeg);
+}
+
+#skillimg2 {
+  background-image: url(assets/css.jpeg);
+}
+
+#skillimg3 {
+  background-image: url(assets/js.jpeg);
+}
+
+#skillimg4 {
+  background-image: url(assets/PHP-code.jpeg);
+}
+
+h5 {
+  font-size: 26px;
+  text-align: center;
+  color: #00d5ff;
+  text-shadow: 2px 2px 4px #ff00c8;
+}
+
+.foot {
+  text-align: center;
+  display: block;
+  position: relative;
+}
+
+label {
+  display: block;
+  padding: 2px;
+  margin: 2px;
+}
+
+form {
+  align-items: center;
+  justify-content: center;
+  display: block;
+
+  color: #00d5ff;
+  text-shadow: 2px 2px 4px #ff00c8;
+  padding: 1px;
+  margin: 1px;
+}
+
+button {
+  background-color: #ff00c8;
+  font-family: inherit;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 3px;
+  color: #00d5ff;
+  border: 0px;
+  display: block;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.bg {
+  background-image: url(assets/cyberpunk2077.jpeg);
+  padding: 0.5rem;
+  min-height: 4vh;
+}
+.bg h1 {
+  font-size: 1.4em;
+}
+
+.bg a {
+  font-size: 1.2em;
+}
+
+.btntop {
+  box-shadow: none;
+  background-color: #ff00c8;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 0.5rem 1.5rem;
+  font-family: inherit;
+  font-size: 1em;
+  height: 50px;
+  width: 90px;
+}
+
+#backtotop {
+  display: none;
+  position: fixed;
+  bottom: 0.3rem;
+  right: 0.3rem;
+}
+
+footer {
+  height: 300px;
+  width: 100%;
+  background-color: #171717;
+  color: #ff00c8;
+}
