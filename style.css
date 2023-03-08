@@ -19,6 +19,8 @@ header {
   background-size: cover;
   min-height: 98vh;
   position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .main_nav {
@@ -233,7 +235,6 @@ h4:hover {
 .skillcard {
   width: 200px;
   height: auto;
-  position: relative;
   background: #171717;
   display: flex;
   flex-direction: column;
