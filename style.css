@@ -391,13 +391,12 @@ footer {
 
   ul.mobileresponse {
     display: block;
-    background-color: white;
     color: black;
     position: absolute;
     left: 0;
     top: 5rem;
     width: 100%;
-    background-color: rgb(180, 180, 180);
+    background-color: rgb(60, 60, 60);
   }
   ul.mobileresponse li {
     display: block;
