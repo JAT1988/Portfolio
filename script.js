@@ -1,5 +1,5 @@
 const backButton = document.querySelector("#backtotop");
-const header = document.querySelector("header");
+const header = document.querySelector(".main_nav");
 const menuButton = document.querySelector(".mobile");
 const nav = document.querySelector("nav ul");
 const menuItems = document.querySelectorAll("nav ul li a");

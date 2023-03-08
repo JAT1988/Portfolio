@@ -54,15 +54,20 @@ body {
 }
 
 header {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
   padding: 20px 50px;
-  position: sticky;
-  top: 0;
   background-image: url(assets/cyberpunk2077.jpeg);
   background-size: cover;
   min-height: 50vh;
+  position: relative;
+}
+
+.main_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+  top: 0;
 }
 
 #firstname {
@@ -137,8 +142,7 @@ header a:hover {
 
 .project_card {
   width: 250px;
-  height: auto;
-  position: relative;
+  height: auto; 
   background: #171717;
   display: flex;
   flex-direction: column;
@@ -350,7 +354,7 @@ button {
 }
 
 .bg {
-  background-image: url(assets/cyberpunk2077.jpeg);
+background-image: url(assets/cyberpunk2077.jpeg);  
   padding: 0.5rem;
   min-height: 4vh;
 }
@@ -360,7 +364,7 @@ button {
 
 .bg a {
   font-size: 1.2em;
-}
+} 
 
 .btntop {
   box-shadow: none;
