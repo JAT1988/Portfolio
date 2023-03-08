@@ -11,53 +11,13 @@ html {
 body {
   font-family: "New Rocker", cursive;
   background: linear-gradient(90deg, black, #00d5ff) fixed;
-}
-.mobile {
-  display: none;
-  background: none;
-  border: none;
-  box-shadow: none;
-  color: #00d5ff;
-  background-color: #ff00c8;
-}
-@media (max-width: 950px) {
-  nav ul {
-    display: none;
-  }
-  .mobile {
-    display: block;
-  }
-
-  .mobile:hover {
-    cursor: pointer;
-    background-color: #99ff00;
-    transition: ease 1s;
-  }
-
-  ul.mobileresponse {
-    display: block;
-    background-color: white;
-    color: black;
-    position: absolute;
-    left: 0;
-    top: 5rem;
-    width: 100%;
-    background-color: rgb(180, 180, 180);
-  }
-  ul.mobileresponse li {
-    display: block;
-    margin: 1rem;
-  }
-  ul li:hover {
-    background-color: #99ff00;
-  }
+  overflow-x: hidden;
 }
 
 header {
-  padding: 20px 50px;
   background-image: url(assets/cyberpunk2077.jpeg);
   background-size: cover;
-  min-height: 50vh;
+  min-height: 98vh;
   position: relative;
 }
 
@@ -106,6 +66,23 @@ header a:hover {
   cursor: crosshair;
 }
 
+/************ Header scroll function in Script.js *************/
+
+.bg {
+  background-color: #040404;
+  padding: 0.5rem;
+  min-height: 4vh;
+}
+.bg h1 {
+  font-size: 1.4em;
+}
+
+.bg a {
+  font-size: 1.2em;
+}
+
+/********************* Project cards ************************/
+
 #projects_h3 {
   font-size: 2.3em;
   color: #00d5ff;
@@ -131,6 +108,10 @@ header a:hover {
   flex-wrap: wrap;
 }
 
+.project_card > * {
+  padding: 10px;
+}
+
 .project_card_container {
   display: flex;
   justify-content: center;
@@ -142,7 +123,7 @@ header a:hover {
 
 .project_card {
   width: 250px;
-  height: auto; 
+  height: auto;
   background: #171717;
   display: flex;
   flex-direction: column;
@@ -151,10 +132,6 @@ header a:hover {
   border-radius: 4px;
   padding: 20px;
   transition: all 0.3s ease-in;
-}
-
-.project_card > * {
-  padding: 10px;
 }
 
 .project_card .project_img {
@@ -173,18 +150,6 @@ header a:hover {
   text-shadow: 2px 2px 4px #ff00c8;
 }
 
-#img1 {
-  background-image: url(assets/Cyberpunkspine.jpeg);
-}
-
-#img2 {
-  background-image: url(assets/Cyberpunk3.jpeg);
-}
-
-#img3 {
-  background-image: url(assets/evongelion.jpeg);
-}
-
 .project_card:hover {
   background: #ff00c8;
   color: #fff;
@@ -198,6 +163,22 @@ header a:hover {
   color: #00d5ff;
   text-shadow: 2px 2px 4px #ff00c8;
 }
+
+/**************** Project card images *****************/
+
+#img1 {
+  background-image: url(assets/Cyberpunkspine.jpeg);
+}
+
+#img2 {
+  background-image: url(assets/Cyberpunk3.jpeg);
+}
+
+#img3 {
+  background-image: url(assets/evongelion.jpeg);
+}
+
+/*************** About me text ****************/
 
 .aboutme {
   padding: 20px;
@@ -213,14 +194,16 @@ header a:hover {
   text-shadow: 2px 2px 4px #ff00c8;
 }
 
+/*************** About me image.gif, the yes duck ****************/
+
 .aboutme_img {
   height: 170px;
   width: auto;
   float: right;
-  padding: 5px;
-  margin: 5px;
   border-radius: 10%;
 }
+
+/*********** Skill cards ***********/
 
 h4 {
   font-size: 2.3em;
@@ -280,6 +263,11 @@ h4:hover {
   text-shadow: 2px 2px 4px #ff00c8;
 }
 
+.skillcard .skillcardtext {
+  line-height: 20px;
+  color: #00d5ff;
+  text-shadow: 2px 2px 4px #ff00c8;
+}
 .skillcard:hover {
   background: #ff00c8;
   color: #fff;
@@ -288,11 +276,7 @@ h4:hover {
   cursor: crosshair;
 }
 
-.skillcard .skillcardtext {
-  line-height: 20px;
-  color: #00d5ff;
-  text-shadow: 2px 2px 4px #ff00c8;
-}
+/*********** Skill cards images ***********/
 
 #skillimg1 {
   background-image: url(assets/HTML.jpeg);
@@ -309,6 +293,8 @@ h4:hover {
 #skillimg4 {
   background-image: url(assets/PHP-code.jpeg);
 }
+
+/*********** Footer, Contact, Buttons ***********/
 
 h5 {
   font-size: 26px;
@@ -333,7 +319,6 @@ form {
   align-items: center;
   justify-content: center;
   display: block;
-
   color: #00d5ff;
   text-shadow: 2px 2px 4px #ff00c8;
   padding: 1px;
@@ -352,19 +337,6 @@ button {
   padding: 10px 20px;
   border-radius: 5px;
 }
-
-.bg {
-background-image: url(assets/cyberpunk2077.jpeg);  
-  padding: 0.5rem;
-  min-height: 4vh;
-}
-.bg h1 {
-  font-size: 1.4em;
-}
-
-.bg a {
-  font-size: 1.2em;
-} 
 
 .btntop {
   box-shadow: none;
@@ -390,4 +362,47 @@ footer {
   width: 100%;
   background-color: #171717;
   color: #ff00c8;
+}
+
+/*********** Mobile media ***********/
+
+.mobile {
+  display: none;
+  background: none;
+  border: none;
+  box-shadow: none;
+  color: #00d5ff;
+  background-color: #ff00c8;
+}
+@media (max-width: 950px) {
+  nav ul {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+
+  .mobile:hover {
+    cursor: pointer;
+    background-color: #99ff00;
+    transition: ease 1s;
+  }
+
+  ul.mobileresponse {
+    display: block;
+    background-color: white;
+    color: black;
+    position: absolute;
+    left: 0;
+    top: 5rem;
+    width: 100%;
+    background-color: rgb(180, 180, 180);
+  }
+  ul.mobileresponse li {
+    display: block;
+    margin: 1rem;
+  }
+  ul li:hover {
+    background-color: #99ff00;
+  }
 }
