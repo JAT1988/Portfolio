@@ -14,6 +14,7 @@ body {
   overflow-x: hidden;
 }
 
+
 header {
   background-image: url(assets/cyberpunk2077.jpeg);
   background-size: cover;
@@ -80,7 +81,7 @@ header a:hover {
 }
 
 .bg a {
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 /********************* Project cards ************************/
@@ -349,13 +350,18 @@ button {
   font-size: 1em;
   height: 50px;
   width: 90px;
-}
-
-#backtotop {
   display: none;
   position: fixed;
-  bottom: 0.3rem;
-  right: 0.3rem;
+  bottom: 0.5rem;
+  right: 0.5rem;
+}
+
+.btntop:hover{
+  background-color: #db00ac;
+}
+
+.btntop:active{
+  transform: scale(0.9);
 }
 
 footer {

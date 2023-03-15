@@ -84,6 +84,8 @@ h5 {
 }
 
 .foot {
+  margin-top: 92px;
+  width: 100%;
   text-align: center;
   display: block;
 }

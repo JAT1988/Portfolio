@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio Project</title>
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+
+
+
+    <header>
+      <div class="main_nav">
+        <h2 id="firstname">James Tompkins</h2>
+        <nav>
+          <button class="mobile">
+            <span class="material-symbols-outlined"> lunch_dining </span>
+          </button>
+          <ul>
+            <li><a href="#projects_h3">Projects</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact me</a></li>
+            <li><a href="gallery1.html">Gallery</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <h3 id="projects_h3">Projects</h3>
+    <div class="projectcards">
+      <div class="project_card_container">
+        <div class="project_card">
+          <div class="project_img" id="img1"></div>
+          <div class="project_title">Project 1</div>
+          <div class="project_text">Spinal upgrades</div>
+        </div>
+      </div>
+      <div class="project_card_container">
+        <div class="project_card">
+          <div class="project_img" id="img2"></div>
+          <div class="project_title">Project 2</div>
+          <div class="project_text">Cyber augmentation</div>
+        </div>
+      </div>
+      <div class="project_card_container">
+        <div class="project_card">
+          <div class="project_img" id="img3"></div>
+          <div class="project_title">Project 3</div>
+          <div class="project_text">Over 9000</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="aboutme">
+      <h4 id="about">About me</h4>
+      <p class="aboutme-text">
+        <img class="aboutme_img" src="assets/duck.gif" alt="duck" />
+        How do you know she is a witch? Well, how'd you become king, then? Found
+        them? In Mercia?! The coconut's tropical! Shut up! I'm not a witch. You
+        can't expect to wield supreme power just 'cause some watery tart threw a
+        sword at you! But you are dressed as one… And this isn't my nose. This
+        is a false one. We want a shrubbery!! The nose? We found them. Shut up!
+        Look, my liege! Bloody Peasant! Knights of Ni, we are but simple
+        travelers who seek the enchanter who lives beyond these woods. No, no,
+        no! Yes, yes. A bit. But she's got a wart. And this isn't my nose. This
+        is a false one.
+      </p>
+    </div>
+    <h4 id="skills">Skills</h4>
+    <div class="skill_cards">
+      <div class="skillcard">
+        <div class="skillcardimg" id="skillimg1"></div>
+        <div class="skillcardtitle">Html</div>
+        <div class="skillcardtext">
+          <progress id="prog1" value="80" max="100"></progress>
+        </div>
+      </div>
+      <div class="skillcard">
+        <div class="skillcardimg" id="skillimg2"></div>
+        <div class="skillcardtitle">Css</div>
+        <div class="skillcardtext">
+          <progress id="prog1" value="60" max="100"></progress>
+        </div>
+      </div>
+      <div class="skillcard">
+        <div class="skillcardimg" id="skillimg3"></div>
+        <div class="skillcardtitle">Javascript</div>
+        <div class="skillcardtext">
+          <progress id="prog1" value="30" max="100"></progress>
+        </div>
+      </div>
+      <div class="skillcard">
+        <div class="skillcardimg" id="skillimg4"></div>
+        <div class="skillcardtitle">Php</div>
+        <div class="skillcardtext">
+          <progress id="prog1" value="10" max="100"></progress>
+        </div>
+      </div>
+    </div>
+
+    <div class="foot">
+      <footer>
+        <form>
+          <h5 id="contact">Contact me</h5>
+          <label for="name">Your name</label>
+          <input id="name" type="text" />
+          <label for="mail">Your email</label>
+          <input id="mail" type="email" />
+          <label for="ta">Message to me</label>
+          <textarea id="ta" cols="30" rows="5"></textarea>
+          <button>SEND MESSAGE</button>
+        </form>
+        &copy; Copyright 2023 Portfolio James Tompkins
+        <button id="backtotop" class="btntop">Scroll up</button>
+      </footer>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

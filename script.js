@@ -3,6 +3,7 @@ const header = document.querySelector(".main_nav");
 const menuButton = document.querySelector(".mobile");
 const nav = document.querySelector("nav ul");
 const menuItems = document.querySelectorAll("nav ul li a");
+const enterBtn = document.querySelector("#enterBtn");
 
 window.onscroll = function () {
   scrollFunction();
@@ -41,3 +42,9 @@ const openMenu = () => {
 backButton.addEventListener("click", getToTop);
 
 menuButton.addEventListener("click", openMenu);
+
+enterBtn.addEventListener("click", gotoLink);
+
+function gotoLink(link) {
+  window.open(link.value);
+} 
