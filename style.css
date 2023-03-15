@@ -14,7 +14,6 @@ body {
   overflow-x: hidden;
 }
 
-
 header {
   background-image: url(assets/cyberpunk2077.jpeg);
   background-size: cover;
@@ -356,11 +355,11 @@ button {
   right: 0.5rem;
 }
 
-.btntop:hover{
+.btntop:hover {
   background-color: #db00ac;
 }
 
-.btntop:active{
+.btntop:active {
   transform: scale(0.9);
 }
 

@@ -47,4 +47,4 @@ enterBtn.addEventListener("click", gotoLink);
 
 function gotoLink(link) {
   window.open(link.value);
-} 
+}
