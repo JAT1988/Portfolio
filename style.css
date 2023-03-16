@@ -306,6 +306,21 @@ h4:hover {
   background-image: url(assets/PHP-code.jpeg);
 }
 
+/************* icon links ***************/
+
+.iconLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconLinks li {
+  display: inline;
+  list-style: none;
+  padding: 20px;
+  margin: 10px;
+}
+
 /*********** Footer, Contact, Buttons ***********/
 
 h5 {
