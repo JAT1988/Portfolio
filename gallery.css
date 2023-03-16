@@ -15,17 +15,17 @@ h2 {
   text-shadow: 2px 2px 4px #ff00c8;
 }
 
-header {
+.main_nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 20px 50px;
+  align-items: baseline;
+  margin: 16px 8px;
 }
 
 header li {
+  display: inline;
   list-style: none;
   text-decoration: none;
-  display: inline-block;
   padding: 0 20px;
 }
 header a {
@@ -44,6 +44,7 @@ header a:hover {
 
 #firstname {
   margin-right: auto;
+  margin-left: 15px;
   font-size: 2.3em;
   color: #00d5ff;
   text-shadow: 2px 2px 4px #ff00c8;
@@ -84,7 +85,7 @@ h5 {
 }
 
 .foot {
-  margin-top: 92px;
+  margin-top: 100px;
   width: 100%;
   text-align: center;
   display: block;
@@ -100,7 +101,6 @@ form {
   align-items: center;
   justify-content: center;
   display: block;
-
   color: #00d5ff;
   text-shadow: 2px 2px 4px #ff00c8;
   padding: 1px;
@@ -125,4 +125,45 @@ footer {
   width: 100%;
   background-color: #171717;
   color: #ff00c8;
+}
+
+.mobile {
+  display: none;
+  background: none;
+  border: none;
+  box-shadow: none;
+  color: #00d5ff;
+  background-color: #ff00c8;
+}
+
+@media (max-width: 950px) {
+  nav ul {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+
+  .mobile:hover {
+    cursor: pointer;
+    background-color: #99ff00;
+    transition: ease 1s;
+  }
+
+  ul.mobileresponse {
+    display: block;
+    color: black;
+    position: absolute;
+    left: 0;
+    top: 5rem;
+    width: 100%;
+    background-color: rgb(60, 60, 60);
+  }
+  ul.mobileresponse li {
+    display: block;
+    margin: 1rem;
+  }
+  ul li:hover {
+    background-color: #99ff00;
+  }
 }
