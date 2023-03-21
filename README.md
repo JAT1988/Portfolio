@@ -12,7 +12,7 @@ Built with:
 
 ## Setup and usage
 
-Live page: 
+Live page: https://jat1988.github.io/Portfolio/
 
 ## Screenshot
 <img width="1440" alt="Screenshot 2023-03-21 at 19 58 46" src="https://user-images.githubusercontent.com/92925082/226700192-2a1f61ea-3652-4358-bc02-33300ceed3a7.png">
